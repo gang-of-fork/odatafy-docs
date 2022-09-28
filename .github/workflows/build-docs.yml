@@ -1,3 +1,11 @@
+name: Generate the docs
+
+on: 
+  push: 
+    branches:
+      - main 
+
+
 jobs:
   deploy:
     name: Deploy
