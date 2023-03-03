@@ -1,2 +1,7 @@
-site_name: My Docs
-theme: windmill
+site_name: odatafy
+theme: readthedocs
+nav:
+    - Home: index.md
+    - URL Structure: url.md
+    - Plugins: plugins.md
+    - FAQ: faq.md
