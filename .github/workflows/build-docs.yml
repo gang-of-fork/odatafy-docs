@@ -7,13 +7,19 @@ on:
 
 
 jobs:
-  deploy:
+  build-and-deploy:
     name: Deploy
     runs-on: ubuntu-latest    
     steps:
 
     # Any prerequisite steps
     - uses: actions/checkout@master
+
+    - name: Install mkdocs
+      run: pip install mkdocs
+      
+    - name: Install mkdocs
+      run: mkdocs build
 
     # Deploy to local repo
     - name: Deploy
