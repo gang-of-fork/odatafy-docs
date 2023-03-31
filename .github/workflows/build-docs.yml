@@ -19,7 +19,7 @@ jobs:
       run: pip install mkdocs
       
     - name: Install Markdown extension
-      run: pip install pymdownx
+      run: pip install pymdownx-extensions
       
     - name: Build mkdocs
       run: mkdocs build
