@@ -7,5 +7,7 @@ nav:
     - Feature-Support: feature-support.md
     - FAQ: faq.md
 markdown_extensions:
-    - pycmarkgfm
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
     
