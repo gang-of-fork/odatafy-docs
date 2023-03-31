@@ -9,5 +9,10 @@ nav:
 markdown_extensions:
     - pymdownx.emoji:
         emoji_generator: !!python/name:pymdownx.emoji.to_png
+        options:
+            attributes:
+                align: absmiddle
+                height: 20px
+                width: 20px
 
     
