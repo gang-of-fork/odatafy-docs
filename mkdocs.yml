@@ -7,7 +7,7 @@ nav:
     - Feature-Support: feature-support.md
     - FAQ: faq.md
 markdown_extensions:
-    - pymdownx.emoji:
+    - pymdownx:
         emoji_generator: https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/64/
 
     
