@@ -14,5 +14,7 @@ markdown_extensions:
                 align: absmiddle
                 height: 20px
                 width: 20px
+            image_path: https://assets-cdn.github.com/images/icons/emoji/unicode/
+            non_standard_image_path: https://assets-cdn.github.com/images/icons/emoji/
 
     
