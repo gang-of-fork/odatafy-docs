@@ -4,4 +4,6 @@ nav:
     - Home: index.md
     - URL Structure: url.md
     - Plugins: plugins.md
+    - Feature-Support: feature-support.md
     - FAQ: faq.md
+    
