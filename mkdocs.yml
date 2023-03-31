@@ -11,9 +11,8 @@ markdown_extensions:
         emoji_generator: !!python/name:pymdownx.emoji.to_png
         options:
             attributes:
-                align: absmiddle
+                align: center
                 height: 20px
                 width: 20px
-            image_path: https://assets-cdn.github.com/images/icons/emoji/unicode/
 
     
