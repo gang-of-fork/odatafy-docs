@@ -18,7 +18,7 @@ jobs:
     - name: Install mkdocs
       run: pip install mkdocs
       
-    - name: Install mkdocs
+    - name: Build mkdocs
       run: mkdocs build
 
     # Deploy to local repo
