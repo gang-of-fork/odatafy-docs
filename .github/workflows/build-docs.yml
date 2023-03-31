@@ -18,6 +18,9 @@ jobs:
     - name: Install mkdocs
       run: pip install mkdocs
       
+    - name: Install Markdown extension
+      run: pip install pycmarkgfm
+      
     - name: Build mkdocs
       run: mkdocs build
 
