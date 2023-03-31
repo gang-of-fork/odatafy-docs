@@ -6,4 +6,6 @@ nav:
     - Plugins: plugins.md
     - Feature-Support: feature-support.md
     - FAQ: faq.md
+markdown_extensions:
+    - pycmarkgfm
     
