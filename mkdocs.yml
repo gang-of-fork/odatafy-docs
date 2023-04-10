@@ -1,5 +1,5 @@
 site_name: odatafy
-theme: readthedocs
+theme: material
 nav:
     - Home: index.md
     - URL Structure: url.md
@@ -7,6 +7,9 @@ nav:
     - Feature-Support: feature-support.md
     - FAQ: faq.md
 markdown_extensions:
+    - def_list
+    - pymdownx.tasklist:
+        custom_checkbox: true
     - pymdownx.emoji:
         emoji_generator: !!python/name:pymdownx.emoji.to_png
         options:
@@ -14,5 +17,7 @@ markdown_extensions:
                 align: middle
                 height: 20px
                 width: 20px
+    
+
 
     
