@@ -45,7 +45,17 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#what-is-odatafy">What is odatafy?</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#what-are-odatafy-plugins">What are odatafy plugins?</a>
+    <li class="toctree-l2"><a class="reference internal" href="#how-does-odatafy-work">How does odatafy work?</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#the-core">The core</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#plugins">Plugins</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-are-odatafy-plugins">What are odatafy plugins?</a>
+    </li>
+        </ul>
     </li>
     </ul>
                 </li>
@@ -89,10 +99,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="official-odatafy-documentation">Official odatafy documentation</h1>
-<p>This is the official odatafy documentation, it contains information about all odatafy realted repositories. odatafy and its plugins are currently deleoped as an npm package.</p>
-<h3 id="what-is-odatafy">What is odatafy?</h3>
-<p>odatafy is an ecosystem of npm modules that aim to help you create oData compatible REST-APIs, thus allowing you to accelerate development and safe time and money by helping you to implement an API that is based on the very-well established oData standard.</p>
+                <h1 id="odatafy-documentation">Odatafy Documentation</h1>
+<p>This page contains the documentation for the odatafy ecosystem. It focuses on the core module, odatafy-parser, and gives an overview over the plugins, which are documented in their respective README files.</p>
+<h2 id="what-is-odatafy">What is odatafy?</h2>
+<p>Odatafy is an ecosystem of npm modules that aim to help you create <a href="https://www.odata.org/documentation/">oDatav4</a> compatible REST-APIs, thus allowing you to accelerate development and save time and money by helping you to implement an API that is based on the very-well established oData v4 standard.</p>
+<h2 id="how-does-odatafy-work">How does odatafy work?</h2>
+<p>The odatafy ecosystem is composed mainly of three parts: the core, plugins and examples.</p>
+<h3 id="the-core">The core</h3>
+<p>The core is the <a href="https://www.npmjs.com/package/odatafy-parser">odatafy-parser npm module</a>, which is a parser consisting of multiple <a href="https://www.npmjs.com/package/pegjs">peg.js</a> grammars working together to parse an oData v4 URL and translate it into an Abstract Syntax Tree (AST). The structure of this AST is documented in the <a href="https://gang-of-fork.github.io/odatafy-parser/modules.html#oDataParseResult">oDataParseResult section</a> of our <a href="https://gang-of-fork.github.io/odatafy-parser/">typedoc documentation</a>. Now you could use the core on its own and program a translator for database queries on top of the AST. Luckily, we already did this for you by offering Plugins. </p>
+<h3 id="plugins">Plugins</h3>
+<p>Plugins are the most essential part of developing an application with odatafy. Plugins are npm packages built on top of the AST, that the <a href="https://www.npmjs.com/package/odatafy-parser">odatafy-parser</a> provides. Currently, we are maintaining two plugins:
+* <a href="https://www.npmjs.com/package/odatafy-mongodb">odatafy-mongodb</a>: Convert odata v4 requests to MongoDB Aggregation Queries with the <code>parseODataUrl()</code> function
+* <a href="https://www.npmjs.com/package/odatafy-mongoose">odatafy-mongoose</a>: Effortlessly generate Service Metadata Files and Expand Mappings for odatafy-mongodb from mongoose schemas</p>
+<h3 id="examples">Examples</h3>
+<p>Finally, to bring it all together, we have created a few applications using the odatafy ecosystem for you to play around with and to guide you through using odatafy in your application.
+* <a href="https://github.com/gang-of-fork/odatafy-mongodb-example">odatafy-mongodb-example</a>: A simple RESTful API leveraging all available plugins. Feel free to try out some odata queries <a href="https://example.odatafy.gang-of-fork.de/">here</a>!
+* </p>
 <h3 id="what-are-odatafy-plugins">What are odatafy plugins?</h3>
 <p>plugins are the most essential part of developing an application with odatafy. They are installed as npm packages and help you to adapt odatafy to your use-case. One example is the odatafy-mongodb plugin which uses the core odatafy-parser to convert oData URLs to MongoDB queries.</p>
               
@@ -142,5 +164,5 @@
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-03-31 15:41:58.719551+00:00
+Build Date UTC : 2023-04-10 18:16:26.131201+00:00
 -->
