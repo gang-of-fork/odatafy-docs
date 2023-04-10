@@ -1,8 +1,23 @@
-# Official odatafy documentation
-This is the official odatafy documentation, it contains information about all odatafy realted repositories. odatafy and its plugins are currently deleoped as an npm package.
+# Odatafy Documentation
+This page contains the documentation for the odatafy ecosystem. It focuses on the core module, odatafy-parser, and gives an overview over the plugins, which are documented in their respective README files.
 
-### What is odatafy?
-odatafy is an ecosystem of npm modules that aim to help you create oData compatible REST-APIs, thus allowing you to accelerate development and safe time and money by helping you to implement an API that is based on the very-well established oData standard.
+## What is odatafy?
+Odatafy is an ecosystem of npm modules that aim to help you create [oDatav4](https://www.odata.org/documentation/) compatible REST-APIs, thus allowing you to accelerate development and save time and money by helping you to implement an API that is based on the very-well established oData v4 standard.
+
+## How does odatafy work?
+The odatafy ecosystem is composed mainly of three parts: the core, plugins and examples.
+### The core
+The core is the [odatafy-parser npm module](https://www.npmjs.com/package/odatafy-parser), which is a parser consisting of multiple [peg.js](https://www.npmjs.com/package/pegjs) grammars working together to parse an oData v4 URL and translate it into an Abstract Syntax Tree (AST). The structure of this AST is documented in the [oDataParseResult section](https://gang-of-fork.github.io/odatafy-parser/modules.html#oDataParseResult) of our [typedoc documentation](https://gang-of-fork.github.io/odatafy-parser/). Now you could use the core on its own and program a translator for database queries on top of the AST. Luckily, we already did this for you by offering Plugins. 
+### Plugins
+Plugins are the most essential part of developing an application with odatafy. Plugins are npm packages built on top of the AST, that the [odatafy-parser](https://www.npmjs.com/package/odatafy-parser) provides. Currently, we are maintaining two plugins:
+* [odatafy-mongodb](https://www.npmjs.com/package/odatafy-mongodb): Convert odata v4 requests to MongoDB Aggregation Queries with the `parseODataUrl()` function
+* [odatafy-mongoose](https://www.npmjs.com/package/odatafy-mongoose): Effortlessly generate Service Metadata Files and Expand Mappings for odatafy-mongodb from mongoose schemas
+
+
+### Examples
+Finally, to bring it all together, we have created a few applications using the odatafy ecosystem for you to play around with and to guide you through using odatafy in your application.
+* [odatafy-mongodb-example](https://github.com/gang-of-fork/odatafy-mongodb-example): A simple RESTful API leveraging all available plugins. Feel free to try out some odata queries [here](https://example.odatafy.gang-of-fork.de/)!
+* 
 
 ### What are odatafy plugins?
 plugins are the most essential part of developing an application with odatafy. They are installed as npm packages and help you to adapt odatafy to your use-case. One example is the odatafy-mongodb plugin which uses the core odatafy-parser to convert oData URLs to MongoDB queries.
