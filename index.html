@@ -1,168 +1,561 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
-      <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>odatafy</title>
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-      <script>
-        // Current page data
-        var mkdocs_page_name = "Home";
-        var mkdocs_page_input_path = "index.md";
-        var mkdocs_page_url = null;
-      </script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="url/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
-    <script src="js/jquery-3.6.0.min.js" defer></script>
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
-</head>
+    
+      
+        <title>odatafy</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
 
-<body class="wy-body-for-nav" role="document">
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> odatafy
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#odatafy-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#what-is-odatafy">What is odatafy?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-does-odatafy-work">How does odatafy work?</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#the-core">The core</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#plugins">Plugins</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#what-are-odatafy-plugins">What are odatafy plugins?</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="url/">URL Structure</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="plugins/">Plugins</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="feature-support/">Feature-Support</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="faq/">FAQ</a>
-                </li>
-              </ul>
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="odatafy" class="md-header__button md-logo" aria-label="odatafy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            odatafy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
       </div>
     </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">odatafy</a>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
         
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
       </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Home</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
               
-                <h1 id="odatafy-documentation">Odatafy Documentation</h1>
-<p>This page contains the documentation for the odatafy ecosystem. It focuses on the core module, odatafy-parser, and gives an overview over the plugins, which are documented in their respective README files.</p>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="odatafy" class="md-nav__button md-logo" aria-label="odatafy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    odatafy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-odatafy" class="md-nav__link">
+    What is odatafy?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-odatafy-work" class="md-nav__link">
+    How does odatafy work?
+  </a>
+  
+    <nav class="md-nav" aria-label="How does odatafy work?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-core" class="md-nav__link">
+    The core
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    Plugins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showcases" class="md-nav__link">
+    Showcases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transform-a-query-into-an-ast-using-odatafy-parser" class="md-nav__link">
+    Transform a query into an AST using odatafy-parser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transform-a-query-into-a-mongodb-aggregation-query-using-odatafy-mongodb" class="md-nav__link">
+    Transform a query into a MongoDB aggregation query using odatafy-mongodb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-an-expandmapping-and-enable-expand-using-odatafy-mongodb-and-odatafy-mongoose" class="md-nav__link">
+    Generate an ExpandMapping and enable $expand using odatafy-mongodb and odatafy-mongoose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-the-service-metadata-file-using-odatafy-mongoose" class="md-nav__link">
+    Generate the Service Metadata File using odatafy-mongoose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="url/" class="md-nav__link">
+        URL Structure
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="plugins/" class="md-nav__link">
+        Plugins
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="feature-support/" class="md-nav__link">
+        Feature-Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-odatafy" class="md-nav__link">
+    What is odatafy?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-odatafy-work" class="md-nav__link">
+    How does odatafy work?
+  </a>
+  
+    <nav class="md-nav" aria-label="How does odatafy work?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-core" class="md-nav__link">
+    The core
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    Plugins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showcases" class="md-nav__link">
+    Showcases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transform-a-query-into-an-ast-using-odatafy-parser" class="md-nav__link">
+    Transform a query into an AST using odatafy-parser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transform-a-query-into-a-mongodb-aggregation-query-using-odatafy-mongodb" class="md-nav__link">
+    Transform a query into a MongoDB aggregation query using odatafy-mongodb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-an-expandmapping-and-enable-expand-using-odatafy-mongodb-and-odatafy-mongoose" class="md-nav__link">
+    Generate an ExpandMapping and enable $expand using odatafy-mongodb and odatafy-mongoose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-the-service-metadata-file-using-odatafy-mongoose" class="md-nav__link">
+    Generate the Service Metadata File using odatafy-mongoose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="odatafy-documentation">Odatafy Documentation</h1>
+<p>This page contains the documentation for the odatafy ecosystem. It focuses on the core module, odatafy-parser, and gives an overview over the plugins, which are documented in their respective README files. This documentation only covers the support of the oData v4 query options in the <a href="https://gang-of-fork.github.io/odatafy-docs/feature-support/">Feature-Support</a> section. If you want to learn how the query options work, please refer to the <a href="http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html">oData v4 URL documentation</a>.</p>
 <h2 id="what-is-odatafy">What is odatafy?</h2>
-<p>Odatafy is an ecosystem of npm modules that aim to help you create <a href="https://www.odata.org/documentation/">oDatav4</a> compatible REST-APIs, thus allowing you to accelerate development and save time and money by helping you to implement an API that is based on the very-well established oData v4 standard.</p>
+<p>Odatafy is an ecosystem of npm modules that aim to help you create <a href="https://www.odata.org/documentation/">oDatav4</a> compatible REST-APIs, thus allowing you to accelerate development and save time and money by helping you to implement an API that is based on the very-well established oData v4 standard. As it is by far the most tideous task, odatafy currently only supports query operations.</p>
 <h2 id="how-does-odatafy-work">How does odatafy work?</h2>
-<p>The odatafy ecosystem is composed mainly of three parts: the core, plugins and examples.</p>
+<p>The odatafy ecosystem is composed mainly of three parts: the core, plugins and showcases.</p>
 <h3 id="the-core">The core</h3>
 <p>The core is the <a href="https://www.npmjs.com/package/odatafy-parser">odatafy-parser npm module</a>, which is a parser consisting of multiple <a href="https://www.npmjs.com/package/pegjs">peg.js</a> grammars working together to parse an oData v4 URL and translate it into an Abstract Syntax Tree (AST). The structure of this AST is documented in the <a href="https://gang-of-fork.github.io/odatafy-parser/modules.html#oDataParseResult">oDataParseResult section</a> of our <a href="https://gang-of-fork.github.io/odatafy-parser/">typedoc documentation</a>. Now you could use the core on its own and program a translator for database queries on top of the AST. Luckily, we already did this for you by offering Plugins. </p>
 <h3 id="plugins">Plugins</h3>
-<p>Plugins are the most essential part of developing an application with odatafy. Plugins are npm packages built on top of the AST, that the <a href="https://www.npmjs.com/package/odatafy-parser">odatafy-parser</a> provides. Currently, we are maintaining two plugins:
-* <a href="https://www.npmjs.com/package/odatafy-mongodb">odatafy-mongodb</a>: Convert odata v4 requests to MongoDB Aggregation Queries with the <code>parseODataUrl()</code> function
-* <a href="https://www.npmjs.com/package/odatafy-mongoose">odatafy-mongoose</a>: Effortlessly generate Service Metadata Files and Expand Mappings for odatafy-mongodb from mongoose schemas</p>
-<h3 id="examples">Examples</h3>
-<p>Finally, to bring it all together, we have created a few applications using the odatafy ecosystem for you to play around with and to guide you through using odatafy in your application.
-* <a href="https://github.com/gang-of-fork/odatafy-mongodb-example">odatafy-mongodb-example</a>: A simple RESTful API leveraging all available plugins. Feel free to try out some odata queries <a href="https://example.odatafy.gang-of-fork.de/">here</a>!
-* </p>
-<h3 id="what-are-odatafy-plugins">What are odatafy plugins?</h3>
-<p>plugins are the most essential part of developing an application with odatafy. They are installed as npm packages and help you to adapt odatafy to your use-case. One example is the odatafy-mongodb plugin which uses the core odatafy-parser to convert oData URLs to MongoDB queries.</p>
-              
+<p>Plugins are the most essential part of developing an application with odatafy. Plugins are npm packages built on top of the AST, that the <a href="https://www.npmjs.com/package/odatafy-parser">odatafy-parser</a> provides. Currently, we are maintaining two plugins:<br />
+- <a href="https://www.npmjs.com/package/odatafy-mongodb">odatafy-mongodb</a>: Convert odata v4 requests to MongoDB Aggregation Queries with the <code>parseODataUrl()</code> function<br />
+- <a href="https://www.npmjs.com/package/odatafy-mongoose">odatafy-mongoose</a>: Effortlessly generate Service Metadata Files and Expand Mappings for odatafy-mongodb from mongoose   schemas</p>
+<h3 id="showcases">Showcases</h3>
+<p>Finally, to bring it all together, we have created a few applications using the odatafy ecosystem for you to play around with and to guide you through using odatafy in your application.<br />
+- <a href="https://github.com/gang-of-fork/odatafy-mongodb-example">odatafy-mongodb-example</a>: A simple RESTful API leveraging all available plugins. Feel free to try out some odata queries <a href="https://example.odatafy.gang-of-fork.de/">here</a>!<br />
+- <a href="https://github.com/gang-of-fork/odatafy-flutter-app">odatafy-flutter-app</a>: A flutter app built on top of the odatafy-mongodb-example app that dynamically generates an admin dashboard for data querying and manipulation based on the Service Metadata and oDatav4 API provided by <a href="https://www.npmjs.com/package/odatafy-mongodb">odatafy-mongodb</a> and <a href="https://www.npmjs.com/package/odatafy-mongoose">odatafy-mongoose</a>.</p>
+<h2 id="examples">Examples</h2>
+<p>The below examples show how to implement the most common scenarios in an express.js service.</p>
+<h3 id="transform-a-query-into-an-ast-using-odatafy-parser">Transform a query into an AST using odatafy-parser</h3>
+<h3 id="transform-a-query-into-a-mongodb-aggregation-query-using-odatafy-mongodb">Transform a query into a MongoDB aggregation query using odatafy-mongodb</h3>
+<h3 id="generate-an-expandmapping-and-enable-expand-using-odatafy-mongodb-and-odatafy-mongoose">Generate an ExpandMapping and enable $expand using odatafy-mongodb and odatafy-mongoose</h3>
+<h3 id="generate-the-service-metadata-file-using-odatafy-mongoose">Generate the Service Metadata File using odatafy-mongoose</h3>
+
+
+
+
+
+                
+              </article>
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="url/" class="btn btn-neutral float-right" title="URL Structure">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
+          
           
         </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-    
-      <span><a href="url/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme_extra.js" defer></script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
-
-</body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+  </body>
 </html>
-
-<!--
-MkDocs version : 1.4.2
-Build Date UTC : 2023-04-10 18:16:26.131201+00:00
--->
