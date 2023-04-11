@@ -28,27 +28,26 @@
 :large_orange_diamond: Filter Expressions (see Sections [Logical Operators](#logical-operators), [Arithmetic Operators](#arithmetic-operators), [Grouping](#grouping-with-parentheses) and [Functions](#functions)) for a detailed overview of supported $filter features
 
 ### $orderby
-:white_check_mark: Request ascending and descending ordering
-:white_check_mark: using $orderby in the Expand Options
-:red_circle: Request ordering by the count of related entities or items within a collection-valued property
+:white_check_mark: Request ascending and descending ordering  
+:white_check_mark: using $orderby in the Expand Options  
+:red_circle: Request ordering by the count of related entities or items within a collection-valued property  
 
 ### $top
-:white_check_mark: Request to limit the maximum number of items returned
+:white_check_mark: Request to limit the maximum number of items returned  
 
 ### $skip
-:white_check_mark: Request to skip the first *n* items of the query result 
+:white_check_mark: Request to skip the first *n* items of the query result   
 
 ### $count
-:white_check_mark: Request the total count of items in a collection to be returned along with the result
-:white_check_mark: Request the count of related entities within the Expand Options
+:white_check_mark: Request the total count of items in a collection to be returned along with the result  
+:white_check_mark: Request the count of related entities within the Expand Options  
 ### $search
-:white_check_mark: Search Terms
-:white_check_mark: Search Phrases
-:white_check_mark: NOT-Operator
-:white_check_mark: AND-Operator
-:white_check_mark: OR-Operator
-:large_orange_diamond: Grouping with Parentheses
-
+:white_check_mark: Search Terms  
+:white_check_mark: Search Phrases  
+:white_check_mark: NOT-Operator  
+:white_check_mark: AND-Operator  
+:white_check_mark: OR-Operator  
+:large_orange_diamond: Grouping with Parentheses  
 
 ## Types
 
