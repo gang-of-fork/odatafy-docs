@@ -28,8 +28,40 @@
 
 ## Types
 
+:white_check_mark: Edm.Binary  
+:white_check_mark:Edm.Boolean  
+:red_circle: Edm.Byte  
+:white_check_mark: Edm.Date  
+:white_check_mark: Edm.DateTimeOffset  
+:white_check_mark: Edm.Decimal  
+:red_circle: Edm.Double  
+:white_check_mark: Edm.Duration  
+:white_check_mark: Edm.Guid  
+:red_circle: Edm.Int16  
+:white_check_mark: Edm.Int32  
+:red_circle: Edm.Int64  
+:red_circle: Edm.SByte  
+:red_circle: Edm.Single  
+:red_circle: Edm.Stream  
+:white_check_mark: Edm.String  
+:white_check_mark: Edm.TimeOfDay  
+:white_check_mark: Edm.Geography  
+:white_check_mark: Edm.GeographyPoint  
+:white_check_mark: Edm.GeographyLineString  
+:white_check_mark: Edm.GeographyPolygon  
+:white_check_mark: Edm.GeographyMultiPoint  
+:white_check_mark: Edm.GeographyMultiLineString  
+:white_check_mark: Edm.GeographyMultiPolygon  
+:white_check_mark: Edm.GeographyCollection  
+:white_check_mark: Edm.Geometry  
+:white_check_mark: Edm.GeometryPoint  
+:white_check_mark: Edm.GeometryLineString  
+:white_check_mark: Edm.GeometryPolygon  
+:white_check_mark: Edm.GeometryMultiPoint  
+:white_check_mark: Edm.GeometryMultiLineString  
+:white_check_mark: Edm.GeometryMultiPolygon  
+:white_check_mark: Edm.GeometryCollection  
 ## Logical Operators
-
 ### Comparison
 
 :white_check_mark: eq (Equals)  
