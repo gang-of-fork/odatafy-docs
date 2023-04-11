@@ -19,9 +19,3 @@ Finally, to bring it all together, we have created a few applications using the 
 - [odatafy-mongodb-example](https://github.com/gang-of-fork/odatafy-mongodb-example): A simple RESTful API leveraging all available plugins. Feel free to try out some odata queries [here](https://example.odatafy.gang-of-fork.de/)!  
 - [odatafy-flutter-app](https://github.com/gang-of-fork/odatafy-flutter-app): A flutter app built on top of the odatafy-mongodb-example app that dynamically generates an admin dashboard for data querying and manipulation based on the Service Metadata and oDatav4 API provided by [odatafy-mongodb](https://www.npmjs.com/package/odatafy-mongodb) and [odatafy-mongoose](https://www.npmjs.com/package/odatafy-mongoose).
  
-## Examples 
-The below examples show how to implement the most common scenarios in an express.js service.
-### Transform a query into an AST using odatafy-parser
-### Transform a query into a MongoDB aggregation query using odatafy-mongodb
-### Generate an ExpandMapping and enable $expand using odatafy-mongodb and odatafy-mongoose
-### Generate the Service Metadata File using odatafy-mongoose

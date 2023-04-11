@@ -2,8 +2,7 @@ site_name: odatafy
 theme: material
 nav:
     - Home: index.md
-    - URL Structure: url.md
-    - Plugins: plugins.md
+    - Getting-Started: getting-started.md
     - Feature-Support: feature-support.md
     - FAQ: faq.md
 markdown_extensions:
