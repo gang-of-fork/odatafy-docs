@@ -9,23 +9,23 @@
 ## Query Options
 
 ### $select
-:white_check_mark: Select specific properties
-:white_check_mark: Select all structural properties with the star operator
-:white_check_mark: Select properties of related entities inside $expand
-:white_check_mark: Select navigation links
-:white_check_mark: Request all actions or functions available on every returned entity
+:white_check_mark: Select specific properties  
+:white_check_mark: Select all structural properties with the star operator  
+:white_check_mark: Select properties of related entities inside $expand  
+:white_check_mark: Select navigation links  
+:white_check_mark: Request all actions or functions available on every returned entity  
 
 ### $expand
-:white_check_mark: Request the value of related documents to be set inline
-:white_check_mark: Request the references to the related documents to be set inline with /$ref
-:white_check_mark: Expand Options
+:white_check_mark: Request the value of related documents to be set inline  
+:white_check_mark: Request the references to the related documents to be set inline with /$ref  
+:white_check_mark: Expand Options  
 
 ### $compute
-:white_check_mark: Computed Properties
+:white_check_mark: Computed Properties  
 
 
 ### $filter
-:large_orange_diamond: Filter Expressions 
+:large_orange_diamond: Filter Expressions (see Sections [Logical Operators](#logical-operators), [Arithmetic Operators](#arithmetic-operators), [Grouping](#grouping-with-parentheses) and [Functions](#functions)) for a detailed overview of supported $filter features
 
 ### $orderby
 
