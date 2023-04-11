@@ -9,12 +9,23 @@
 ## Query Options
 
 ### $select
+:white_check_mark: Select specific properties
+:white_check_mark: Select all structural properties with the star operator
+:white_check_mark: Select properties of related entities inside $expand
+:white_check_mark: Select navigation links
+:white_check_mark: Request all actions or functions available on every returned entity
 
 ### $expand
+:white_check_mark: Request the value of related documents to be set inline
+:white_check_mark: Request the references to the related documents to be set inline with /$ref
+:white_check_mark: Expand Options
 
 ### $compute
+:white_check_mark: Computed Properties
+
 
 ### $filter
+:large_orange_diamond: Filter Expressions 
 
 ### $orderby
 
@@ -112,58 +123,59 @@
 
 :white_check_mark: Grouping with parenthesis
 
-## String and Collection Functions
+## Functions
+### String and Collection Functions
 
-### concat
+#### concat
 
 :white_check_mark: concat(String, String)  
 :red_circle: concat(Collection, Collection)  
 
-### contains
+#### contains
 
 :white_check_mark: contains(String, String)  
 :red_circle: contains(Collection, Collection)  
 
-### endswith
+#### endswith
 
 :white_check_mark: endswith(String, String)  
 :red_circle: endswith(Collection, Collection)  
 
-### indexof
+#### indexof
 
 :white_check_mark: indexof(String, String)  
 :red_circle: indexof(Collection, Collection)  
 
-### length
+#### length
 
 :white_check_mark: length(Edm.String)  
 :red_circle: length(Collection)  
 
-### startswith
+#### startswith
 
 :white_check_mark: startswith(String, String)  
 :red_circle: startswith(Collection, Collection)  
 
-### substring
+#### substring
 
 :white_check_mark: substring(String, Number)  
 :white_check_mark: substring(String, Number, Number)  
 :red_circle: substring(Collection, Number)  
 :red_circle: substring(Collection, Number, Number)  
 
-## Collection Functions
+### Collection Functions
 
 :red_circle: hassubset(Collection, Collection)  
 :red_circle: hassubsequence(Collection, Collection)  
 
-## String Functions
+### String Functions
 
 :white_check_mark: matchesPattern(String, String)  
 :white_check_mark: tolower(String)  
 :white_check_mark: toupper(String)  
 :white_check_mark: trim(String)  
 
-## Date and Time Functions
+### Date and Time Functions
 
 :white_check_mark: date(Datetime)  
 :white_check_mark: year(Date)  
@@ -185,41 +197,41 @@
 :white_check_mark: now()  
 :white_check_mark: mindatetime()  
 
-## Arithmetic Functions
+### Arithmetic Functions
 
 :white_check_mark: ceiling(Number)  
 :white_check_mark: floor(Number)  
 :white_check_mark: round(Number)  
 
-## Type Functions
+### Type Functions
 
 :white_check_mark: cast(Type)  
 :white_check_mark: cast(Expression, Type)  
 :white_check_mark: isof(Type)  
 :white_check_mark: isof(Expression, Type)  
 
-## Geo Functions
+### Geo Functions
 
-### geo.distance
+#### geo.distance
 
 :white_check_mark: geo.distance(GeographyPoint, GeographyPoint)  
 :white_check_mark: geo.distance(GeometryPoint, GeometryPoint)  
 
-### geo.intersects
+#### geo.intersects
 
 :white_check_mark: geo.intersects(GeographyPoint, GeographyPolygon)  
 :white_check_mark: geo.intersects(GeometryPoint, GeometryPolygon)  
 
-### geo.length
+#### geo.length
 
 :white_check_mark: geo.length(GeographyLineString)  
 :white_check_mark: geo.length(GeometryLineString)  
 
-## Conditional Functions
+### Conditional Functions
 
 :white_check_mark: case(Edm.Boolean:expression, ..., Edm.Boolean:expression)  
 
-## Lambda Operators
+### Lambda Operators
 
 :white_check_mark: any(Symbol:Edm.Boolean:expression)  
 :white_check_mark: all(Symbol:Edm.Boolean:expression)  
