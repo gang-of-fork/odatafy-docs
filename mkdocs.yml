@@ -3,8 +3,8 @@ theme: material
 nav:
     - Home: index.md
     - Getting-Started: getting-started.md
-    - Feature-Support: feature-support.md
-    - FAQ: faq.md
+#    - Feature-Support: feature-support.md
+#    - FAQ: faq.md
 markdown_extensions:
     - def_list
     - pymdownx.tasklist:
